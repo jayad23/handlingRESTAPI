@@ -30,7 +30,7 @@ export const firstReducer = ( state = initialState, action)=>{
                     ...state,
                     userId: action.payload
                 }
-            
+            // comments
             case Types.Edit:
                 return {
                     ...state,
