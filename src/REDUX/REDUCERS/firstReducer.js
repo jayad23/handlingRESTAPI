@@ -22,13 +22,15 @@ export const firstReducer = ( state = initialState, action)=>{
             case Types.setFlag:
                 return{
                     ...state,
-                    flagButton: action.payload
+                    flagButton: action.payload,
+                    selectedUser: undefined
                 }
 
             case Types.Delete:
                 return {
                     ...state,
-                    userId: action.payload
+                    userId: action.payload,
+                    inputUserVals: undefined
                 }
             // comments
             case Types.Edit:
