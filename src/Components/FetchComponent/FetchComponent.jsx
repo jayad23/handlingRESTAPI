@@ -9,7 +9,8 @@ export const FetchComponent = () => {
     const inputVals = useSelector( store => store.firstReducer.inputUserVals)
     const userId = useSelector( store => store.firstReducer.userId)
     const updatedUser = useSelector( store => store.firstReducer.updatedUser)
-    console.log(inputVals)
+    const store = useSelector( store => store)
+    console.log(store)
     // const urlApi = 
     useEffect(() => {
         function request (){

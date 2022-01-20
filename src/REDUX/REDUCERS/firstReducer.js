@@ -10,7 +10,6 @@ export const firstReducer = ( state = initialState, action)=>{
             return {
                 ...state,
                 initialData: action.payload,
-                userId: undefined
             }
 
             case Types.submitUser:
@@ -42,7 +41,6 @@ export const firstReducer = ( state = initialState, action)=>{
             case Types.PutUser:
                 return{
                     ...state,
-                    selectedUser: null,
                     updatedUser: action.payload
                 
                 }
