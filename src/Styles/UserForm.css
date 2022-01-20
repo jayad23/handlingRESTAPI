@@ -1,0 +1,82 @@
+.container-form{
+    width: 30%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(7, 0, 44);
+    border-radius: 7rem 0 0 0;
+}
+
+.container-form > form{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-form > form > section{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    color: white;
+    font-weight:bolder;
+}
+
+.container-form > form > section > input{
+    padding: 10px; 
+    border: none;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.container-form > form > section > input:focus{
+    outline: none;
+}
+
+.container-btns{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+} 
+
+.container-btns > button{
+    width: 30%;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    background: #452990;
+    background: -moz-linear-gradient(-45deg, #452990 0%, #1C6EA4 50%, #9E3EA9 100%);
+    background: -webkit-linear-gradient(-45deg, #452990 0%, #1C6EA4 50%, #9E3EA9 100%);
+    background: linear-gradient(135deg, #452990 0%, #1C6EA4 50%, #9E3EA9 100%);
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    border-radius: 5px;
+    animation: btns 3s ease-in-out;
+}
+.container-btns > button:nth-child(2){
+    background: #9E3EA9;
+    background: -moz-linear-gradient(45deg, #9E3EA9 0%, #1C6EA4 50%, #452990 100%);
+    background: -webkit-linear-gradient(45deg, #9E3EA9 0%, #1C6EA4 50%, #452990 100%);
+    background: linear-gradient(45deg, #9E3EA9 0%, #1C6EA4 50%, #452990 100%);
+}
+
+@keyframes btns {
+    0%{
+        transform: scale(0.2);
+    }50%{
+        transform: scale(1.2);
+    }100%{
+        transform: scale(1.0);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container-form{
+        width: 100%;
+        border-radius: 0 0 7rem;
+    }
+}
