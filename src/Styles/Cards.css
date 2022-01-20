@@ -1,0 +1,45 @@
+.cards{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 5px 4px -1px rgba(0,0,0,0.49); 
+    box-shadow: 3px 5px 4px -1px rgba(0,0,0,0.49);
+    background-color: rgb(218, 212, 208);
+    margin-bottom: 8px;
+}
+
+.cards > .clards-Ulist{
+    list-style: none;
+}
+
+.cards > .clards-Ulist > li{
+    padding: 5px;
+}
+
+.container-edit{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.container-edit > i:nth-child(1){
+    color:rgb(45, 16, 209)
+}
+.container-edit > i:nth-child(2){
+    color:crimson;
+}
+
+@media screen and (max-width: 1238px) {
+    .cards{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .cards{
+        width: 70%;
+    }
+}
